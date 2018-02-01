@@ -33,8 +33,7 @@ class PigLatinizer
 
   def latin_more_than_one(split_split_word)
 
-    if !@@vowels.include?(split_split_word[0]) 
-      && @@vowels.include?(split_split_word[1])
+    if !@@vowels.include?(split_split_word[0]) && @@vowels.include?(split_split_word[1])
       split_split_word.rotate!(1)
       split_split_word << "ay"
 
